@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Espresso Bar</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                www.factoryespressobar.com
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <span class=></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="sidebar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link" onclick="showSection('menu')">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reservas" class="nav-link" onclick="showSection('reservas')">RESERVAS Y CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#promociones" class="nav-link" onclick="showSection('promociones')">PROMOCIONES Y EVENTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#nosotros" class="nav-link" onclick="showSection('nosotros')">SOBRE NOSOTROS</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-area">
+                
+                <section id="home-section" class="content-section active">
+                    <h2>Bienvenidos a Factory Espresso Bar</h2>
+                    <p>Seleccione una opción del menú para ver más información.</p>
+                    <div class="gallery">
+                        <div class="gallery-item">Imagen 1</div>
+                        <div class="gallery-item">Imagen 2</div>
+                        <div class="gallery-item">Imagen 3</div>
+                        <div class="gallery-item">Imagen 4</div>
+                        <div class="gallery-item">Imagen 5</div>
+                        <div class="gallery-item">Imagen 6</div>
+                    </div>
+                </section>
+
+                
+                <section id="menu-section" class="content-section">
+                    <h2>Nuestro Menú</h2>
+                    <p>Descubre nuestra variedad de cafés, bebidas y alimentos.</p>
+                    <div class="gallery">
+                        <div class="gallery-item">Café Espresso</div>
+                        <div class="gallery-item">Cappuccino</div>
+                        <div class="gallery-item">Latte</div>
+                        <div class="gallery-item">Moka</div>
+                        <div class="gallery-item">Postres</div>
+                        <div class="gallery-item">Desayunos</div>
+                    </div>
+                </section>
+
+                
+                <section id="reservas-section" class="content-section">
+                    <h2>RESERVAS</h2>
+                    <p>Reserve su mesa o espacio para eventos especiales.</p>
+                    <form>
+                        <div style="margin-bottom: 15px;">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" style="width: 100%; padding: 8px; margin-top: 5px;">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" style="width: 100%; padding: 8px; margin-top: 5px;">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" id="fecha" style="width: 100%; padding: 8px; margin-top: 5px;">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label for="personas">Número de personas:</label>
+                            <input type="number" id="personas" style="width: 100%; padding: 8px; margin-top: 5px;">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" rows="4" style="width: 100%; padding: 8px; margin-top: 5px;"></textarea>
+                        </div>
+                        <button type="submit" style="background-color: #000; color: #fff; padding: 10px 20px; border: none; cursor: pointer;">Enviar Reserva</button>
+                    </form>
+                    <div class="contact-info">
+                        <span class="whatsapp-icon">📱</span>
+                        <span>+591 7765432</span>
+                    </div>
+                </section>
+
+                
+                <section id="promociones-section" class="content-section">
+                    <h2>PROMOCIONES Y EVENTOS</h2>
+                    <p>Descubra nuestras promociones actuales y próximos eventos.</p>
+                    <div class="gallery">
+                        <div class="gallery-item">Happy Hour - 2x1 en Cafés (5pm-7pm)</div>
+                        <div class="gallery-item">Noche de Jazz - Todos los viernes</div>
+                        <div class="gallery-item">Desayuno Completo - 25% Descuento</div>
+                        <div class="gallery-item">Evento Corporativo - Consultar</div>
+                    </div>
+                </section>
+
+                
+                <section id="nosotros-section" class="content-section">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <div class="about-content">
+                        <p>Factory Espresso Bar es un espacio donde la pasión por el café se une con un ambiente acogedor y moderno. Fundado en 2018, nos hemos dedicado a ofrecer la mejor experiencia en cada taza.</p>
+                        <p>Trabajamos con granos de café seleccionados cuidadosamente de diferentes regiones del mundo, tostados de manera artesanal para garantizar el mejor sabor y aroma.</p>
+                        <p>Nuestro equipo está formado por baristas profesionales apasionados por el arte del café.</p>
+                    </div>
+                    <h3>Avisos</h3>
+                    <div class="news-item">
+                        <h4>Nuevo horario extendido</h4>
+                        <p>A partir del 1 de junio, estaremos abiertos hasta las 10pm.</p>
+                    </div>
+                    <div class="news-item">
+                        <h4>Nuevos productos</h4>
+                        <p>Hemos ampliado nuestra carta con nuevas variedades de café de especialidad.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            
+            let targetSection;
+            
+            switch(sectionId) {
+                case 'menu':
+                    targetSection = document.getElementById('menu-section');
+                    break;
+                case 'reservas':
+                    targetSection = document.getElementById('reservas-section');
+                    break;
+                case 'promociones':
+                    targetSection = document.getElementById('promociones-section');
+                    break;
+                case 'nosotros':
+                    targetSection = document.getElementById('nosotros-section');
+                    break;
+                default:
+                    targetSection = document.getElementById('home-section');
+            }
+            
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+            
+            
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + sectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        
+        function handleHashChange() {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                showSection(hash);
+            }
+        }
+        
+        
+        window.addEventListener('load', handleHashChange);
+        window.addEventListener('hashchange', handleHashChange);
+        
+    </script>
+</body>
+</html>
